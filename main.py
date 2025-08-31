@@ -2,7 +2,6 @@ from PyQt6.QtWidgets import *
 import sys
 
 
-
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -34,7 +33,8 @@ class MainWindow(QMainWindow):
 
 
     def setupUI(self):
-        pass
+        self.main_layout = QGridLayout()
+        self.default_img = QPixMap
     
 app = QApplication(sys.argv)
 window = MainWindow()
